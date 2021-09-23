@@ -28,6 +28,9 @@ def start(message):
 
     else:
         print(message.text)
+        print(message.text.split('ответ1')[0].split())
+        print(message.text.split('ответ1')[0])
+        print(message.text.split('ответ1'))
         bot.send_message(message.from_user.id, 'Напиши чтобы получить ответ', reply_markup=keyboard1)
 
 bot.polling(none_stop=True, interval=0)
